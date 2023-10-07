@@ -1,5 +1,6 @@
+/* using root for variables used throughout this css sheet */
 :root {
-  --font-color: brown;
+  --main-color: brown;
 }
 
 * {
@@ -31,15 +32,17 @@ p {
 #header {
   display: flex;
   flex-direction: row;
-  /* padding: 5px 5%; */
-  background-color: var(--font-color);
+  /* using the css variable rule to apply to the background colour */
+  background-color: var(--main-color);
+  position: sticky;
 }
 
 /* heading of my name style. width of the header */
 #header h1 {
   background-color: rgb(250, 209, 209);
+  /* width of just the header's h1 i.e. my name */
   width: 30%;
-  color: brown;
+  color: var(--main-color);
   text-align: right;
   padding: 10px 2%;
 }
@@ -58,32 +61,48 @@ p {
   padding: 10px;
   background-color: rgb(250, 209, 209);
   text-decoration: none;
-  color: var(--font-color);
+  color: var(--main-color);
   border-radius: 20px;
   font-weight: 900;
 }
 
-.figure {
-  height: 200px;
-  display: flex;
-  justify-content: center;
-}
-
-.hero-banner {
+/* hero banner section */
+#hero-banner {
   display: flex;
   flex-direction: row;
+  background-color: rgb(230, 177, 117);
+}
+
+/* figure container */
+figure {
   position: relative;
-  align-items: flex-end;
-  justify-content: center;
+  left: 30%;
 }
 
-
-.figure img {
-  height: 2px;
-  display: flex;
-  justify-content: center;
+/* image styling */
+figure img {
+  box-shadow: 12px 12px 2px 1px rgba(250, 209, 209, 0.8);
 }
+
 
 h2 {
-  color: var(--font-color)
+  color: var(--main-color);
 }
+
+#hero-banner div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  margin-right: 10%;
+}
+#hero-banner div h2 {
+  text-align: center;
+  border-radius: 20px;
+  padding: 5px;
+  margin-bottom: 30px;
+  background-color: rgb(250, 209, 209);
+}
+
+/* media queries */
