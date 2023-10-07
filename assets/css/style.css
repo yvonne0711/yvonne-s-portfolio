@@ -1,5 +1,10 @@
+:root {
+  --font-color: brown;
+}
+
 * {
   box-sizing: border-box;
+  border: solid red 1px;
 }
 
 body {
@@ -20,4 +25,65 @@ h6 {
 
 p {
   margin: 0;
+}
+
+/* header bar at the top of the page uses flex to style the whole header bar */
+#header {
+  display: flex;
+  flex-direction: row;
+  /* padding: 5px 5%; */
+  background-color: var(--font-color);
+}
+
+/* heading of my name style. width of the header */
+#header h1 {
+  background-color: rgb(250, 209, 209);
+  width: 30%;
+  color: brown;
+  text-align: right;
+  padding: 10px 2%;
+}
+
+/* onclick links, appear to the right of the header bar, width is how far to the right*/
+#nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+/* space out each element of the onclick links */
+#nav a {
+  margin: 15px;
+  padding: 10px;
+  background-color: rgb(250, 209, 209);
+  text-decoration: none;
+  color: var(--font-color);
+  border-radius: 20px;
+  font-weight: 900;
+}
+
+.figure {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-banner {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+
+.figure img {
+  height: 2px;
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  color: var(--font-color)
 }
