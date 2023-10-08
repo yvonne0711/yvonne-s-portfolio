@@ -7,6 +7,8 @@
 * {
   box-sizing: border-box;
   border: solid red 1px;
+  /* all text colour to be a main colour */
+  color: brown;
 }
 
 body {
@@ -42,7 +44,6 @@ p {
   background-color: var(--secondary-color);
   /* width of just the header's h1 i.e. my name */
   width: 30%;
-  color: var(--main-color);
   text-align: right;
   padding: 10px 2%;
 }
@@ -61,7 +62,6 @@ p {
   padding: 10px;
   background-color: var(--secondary-color);
   text-decoration: none;
-  color: var(--main-color);
   border-radius: 20px;
   font-weight: 900;
 }
@@ -81,11 +81,6 @@ figure {
 /* image styling. adding a box shadow to the image*/
 figure img {
   box-shadow: 12px 12px 2px 1px rgba(250, 209, 209, 0.8);
-}
-
-/* setting all h2 and main text colours to be the same colour using the variable property */
-h2, p {
-  color: var(--main-color);
 }
 
 /* positioning of the section of the text within the hero banner */
@@ -136,19 +131,31 @@ h2, p {
 }
 
 /* styling the text block of main section */
-.page-section p {
+.content {
   display: flex;
   flex-basis: 2000px;
   margin: 0px 100px 0px 30px;
 }
 
 /* grid on second section */
-
+/* #main-grid {
+  display:flex;
+  flex-basis: 2000px;
+} */
 
 /* contact section */
-#contact p {
+#contact .content {
   display: flex;
   justify-content: space-evenly;
+}
+
+#contact a {
+  margin: 15px;
+  padding: 10px 30px 10px 30px;
+  background-color: var(--secondary-color);
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: 900;
 }
 
 /* .main-titles {
