@@ -131,17 +131,66 @@ figure img {
 }
 
 /* styling the text block of main section */
+/*  note to self: removed the flex-basis property as it might've interferred with the width of the contents section */
 .content {
   display: flex;
-  flex-basis: 2000px;
   margin: 0px 100px 0px 30px;
+  width: 100%;
 }
 
 /* grid on second section */
-/* #main-grid {
-  display:flex;
-  flex-basis: 2000px;
-} */
+#main-grid {
+  display: grid;
+  grid-template-rows: 400px 200px; 
+  grid-template-columns: 1fr 1fr; 
+  /* gap between the elements */
+  gap: 15px;
+  grid-template-areas:
+  "first-project first-project"
+  "second-project third-project"
+  ;
+  /* makes sure the grid is the same width as the content class */
+  width: 100%;
+}
+
+/* assigning the grid area for the first project */
+#first-project {
+  grid-area: first-project; 
+  background-image: url("../images/horiseon-refactoring-img.png");
+}
+
+/* assigning the grid area for the second project */
+#second-project {
+  grid-area: second-project;
+  background-image: url("../images/yvonne0711.github.io_CFG-Grub_.png");
+}
+
+/* assigning the grid area for the third project */
+#third-project {
+  grid-area: third-project;
+  background-image: url("../images/lantern-night-clouds-lights-anime-stars-42.jpg");
+}
+
+/* styling of each grid area */
+.grid {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 2px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+  border: solid var(--secondary-color) 5px;
+  text-decoration: none;
+}
+
+/* the styling of the text in the grid areas */
+.heading {
+  background-color: var(--secondary-color);
+  width: 30%;
+  padding: 10px 1%;
+  font-weight: 900;
+}
 
 /* contact section */
 #contact .content {
@@ -149,6 +198,7 @@ figure img {
   justify-content: space-evenly;
 }
 
+/* styling the contact buttons */
 #contact a {
   margin: 15px;
   padding: 10px 30px 10px 30px;
@@ -157,19 +207,5 @@ figure img {
   border-radius: 20px;
   font-weight: 900;
 }
-
-/* .main-titles {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-} */
-
-/* .main-titles h2 {
-  border-right: solid var(--secondary-color) 3px;
-  text-align: right;
-  width: 100%;
-  height: 100%;
-} */
 
 /* media queries */
