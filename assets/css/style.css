@@ -69,28 +69,32 @@ p {
 /* hero banner section */
 #hero-banner {
   display: flex;
-  flex-direction: row;
-}
-
-/* figure container */
-figure {
+  justify-content: center;
+  align-items: center;
+  /* to make child elements have absolute positioning */
   position: relative;
-  left: 30%;
 }
 
-/* image styling. adding a box shadow to the image*/
-figure img {
+/* image of myself */
+#hero-banner img {
+  position: relative;
+  height: 20%;
+  width: 20%;
   box-shadow: 12px 12px 2px 1px rgba(250, 209, 209, 0.8);
 }
 
 /* positioning of the section of the text within the hero banner */
 #hero-banner div {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-end;
   width: 100%;
-  margin-right: 10%;
+  height: 100%;
+  padding-right: 50px; 
 }
 
 /* styling of the text within the hero banner */
@@ -98,8 +102,8 @@ figure img {
   text-align: center;
   border-radius: 20px;
   padding: 5px;
-  margin-right: 10px;
-  margin-bottom: 30px;
+  max-width: 100%;
+  max-height: 100%;
   background-color: var(--secondary-color);
 }
 
@@ -153,27 +157,29 @@ figure img {
   width: 100%;
 }
 
-/* assigning the grid area for the first project */
+/* assigning the grid area for the first project and repositioning the background image */
 #first-project {
   grid-area: first-project; 
   background-image: url("../images/horiseon-refactoring-img.png");
+  background-position: center -170px;
 }
 
-/* assigning the grid area for the second project */
+/* assigning the grid area for the second project and repositioning the background image */
 #second-project {
   grid-area: second-project;
   background-image: url("../images/yvonne0711.github.io_CFG-Grub_.png");
+  background-position: center -75px;
 }
 
-/* assigning the grid area for the third project */
+/* assigning the grid area for the third project and repositioning the background image */
 #third-project {
   grid-area: third-project;
   background-image: url("../images/lantern-night-clouds-lights-anime-stars-42.jpg");
+  background-position: center -150px;
 }
 
 /* styling of each grid area */
 .grid {
-  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 2px;
