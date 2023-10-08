@@ -135,7 +135,7 @@ h2, p {
   padding-right: 8px;
 }
 
-/* styling the text section of  */
+/* styling the text block of main section */
 .page-section p {
   display: flex;
   flex-basis: 2000px;
@@ -143,6 +143,13 @@ h2, p {
 }
 
 /* grid on second section */
+
+
+/* contact section */
+#contact p {
+  display: flex;
+  justify-content: space-evenly;
+}
 
 /* .main-titles {
   display: flex;
