@@ -144,6 +144,7 @@ p {
 /* grid on second section */
 #main-grid {
   display: grid;
+  /* note to self: height for first row, height for second row */
   grid-template-rows: 400px 200px; 
   grid-template-columns: 1fr 1fr; 
   /* gap between the elements */
@@ -217,4 +218,90 @@ p {
 }
 
 /* media queries */
+/* media query for larger devices */
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
 
+  #header h1 {
+    width: 50%; 
+  }
+
+  #nav a {
+    margin: 12px;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+}
+
+/* media query for tablet devices */
+@media only screen and (min-width: 601px) and (max-width: 1023px) {
+  body {
+    font-size: 16px;
+  }
+
+  #header h1 {
+    width: 50%; 
+  }
+
+  #nav a {
+    margin: 12px;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+}
+
+/* media query for mobile devices */
+@media only screen and (max-width: 600px) {
+  :root {
+    --size: 24px;
+  }
+
+  h1 {
+    font-size: var(--size);
+  }
+
+  h2 {
+    font-size: var(--size)/2;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  #header h1 {
+    width: 50%;
+  }
+
+  #nav a, #contact a {
+    margin: 6px;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: 500px;
+  }
+
+  #hero-banner div {
+    padding-right:10px;
+  }
+
+  .page-section h2 {
+    flex-basis: 200px;
+  }
+
+  .content {
+    margin: 0px 30px 0px 20px;
+  }
+
+  .heading {
+    width: 58%;
+    padding: 3px 1%;
+  }
+
+  #main-grid {
+    grid-template-rows: 200px 100px;
+  }
+
+}
