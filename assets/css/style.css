@@ -6,7 +6,6 @@
 
 * {
   box-sizing: border-box;
-  border: solid red 1px;
   /* all text colour to be a main colour */
   color: brown;
 }
@@ -161,21 +160,21 @@ p {
 #first-project {
   grid-area: first-project; 
   background-image: url("../images/horiseon-refactoring-img.png");
-  background-position: center -170px;
+  background-position: center 12%;
 }
 
 /* assigning the grid area for the second project and repositioning the background image */
 #second-project {
   grid-area: second-project;
-  background-image: url("../images/yvonne0711.github.io_CFG-Grub_.png");
-  background-position: center -75px;
+  background-image: url("../images/project-2.png");
+  background-position: center 20%;
 }
 
 /* assigning the grid area for the third project and repositioning the background image */
 #third-project {
   grid-area: third-project;
   background-image: url("../images/lantern-night-clouds-lights-anime-stars-42.jpg");
-  background-position: center -150px;
+  background-position: center 80%;
 }
 
 /* styling of each grid area */
@@ -188,6 +187,8 @@ p {
   align-content: end;
   border: solid var(--secondary-color) 5px;
   text-decoration: none;
+  background-attachment: local;
+  background-position: center;
 }
 
 /* the styling of the text in the grid areas */
@@ -202,6 +203,7 @@ p {
 #contact .content {
   display: flex;
   justify-content: space-evenly;
+  background-color: var(--main-color);
 }
 
 /* styling the contact buttons */
@@ -215,3 +217,4 @@ p {
 }
 
 /* media queries */
+
