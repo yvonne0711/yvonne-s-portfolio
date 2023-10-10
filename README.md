@@ -13,7 +13,7 @@
 ## Overview
 
 ### The challenge
-This project is to create my own digital portfolio. It currently holds a navigation bar which links to a section of a mini bio, my projects so far, and how to contact me. Each project can be clicked on to be then deployed to the application. This project is a good way to see my own progression and tech journey, but also a way to showcase my skills and projects to future companies. I've always wanted to start my own portfolio but I didn't know how with the lack of skills; this project forced me to use the skills I've learnt so far and also force myself to start on a portfolio and update it as I progress further!
+This project is to create my own digital portfolio. It currently holds a navigation bar which links to a section of a mini bio, my projects so far, and how to contact me. Each project can be clicked on to be then deployed to the application. It also includes responsive web design, so the styling adjusts depending on the device's viewport width. This project is a good way to see my own progression and tech journey, but also a way to showcase my skills and projects to future companies. I've always wanted to start my own portfolio but I didn't know how with the lack of skills; this project forced me to use the skills I've learnt so far and also force myself to start on a portfolio and update it as I progress further!
 
 ### Mock-up
 
@@ -37,4 +37,5 @@ Deployed application: https://yvonne0711.github.io/yvonnes-portfolio/
 - Use of CSS variables throughout 
 - Made sure all application's links function correctly using the `href` attribute within the `a` tags
 - A lot more comfortable with CSS flexbox and CSS grid layout. Played around with a lot of styling and box modelling
+- Media queries can be tricky but helped me understand my code and portfolio a lot better and wasn't that difficult after all
 - Difficult but great project to start on a portfolio and have a deeper understanding of HTML and CSS
